@@ -1,0 +1,22 @@
+$colors: (
+	red: #ff4d57,
+	black: #1f1f29,
+	soft-black: #424250,
+	grey: #897f8a,
+	green: #54ac4c,
+	white: #ffffff,
+	smoke: #eeeeee,
+	blue: #5b5efa,
+	soft-blue: #adaefc,
+	yellow: #fff21e
+);
+
+@each $color_name, $color in $colors{
+	.#{$color-name}{
+		background-color: $color;
+	}
+
+	.#{$color-name}-text{
+		color: $color;
+	}
+}
